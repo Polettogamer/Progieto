@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggiungi Dispositivo</title>
+</head>
+<body>
+    <h1>Aggiungi un nuovo dispositivo</h1>
+    <form method="post" action="../back/addDevice.php">
+        <label>Nome: <input type="text" name="nome" required></label><br>
+        <label>Tipo: <input type="text" name="tipo" required></label><br>
+        <label>IP: <input type="text" name="ip" required></label><br>
+        <label>Posizione: <input type="text" name="posizione" required></label><br>
+        <label>Data Installazione: <input type="datetime-local" name="data_installazione" required></label><br>
+        <label>Bio: <textarea name="bio"></textarea></label><br>
+        <button type="submit">Aggiungi Dispositivo</button>
+    </form>
+    <a href="dashboard.php">Torna all'elenco dispositivi</a>
+</body>
+</html>

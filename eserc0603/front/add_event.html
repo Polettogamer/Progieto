@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggiungi Evento</title>
+</head>
+<body>
+    <h1>Aggiungi un nuovo dispositivo</h1>
+    <form method="post" action="../back/addEvent.php">
+        
+        
+        <label>Messaggio: <input type="text" name="messaggio" required></label><br>
+        <label>Severità: <input type="number" name="severità" min="1" max="5" required></label><br>
+
+        <button type="submit">Aggiungi Dispositivo</button>
+    </form>
+    <a href="view_events.php">Torna all'elenco Eventi</a>
+</body>
+</html>

@@ -32,12 +32,12 @@ if ($stmt->num_rows > 0) {
         exit();
     } else {
         // Password errata
-        header("Location: ../front/log_in.php?error=wrong_password");
+        header("Location: ../front/log_in.html?error=wrong_password");
         exit();
     }
 } else {
     // Email non trovata
-    header("Location: ../front/log_in.php?error=email_not_found");
+    header("Location: ../front/log_in.html?error=email_not_found");
     exit();
 }
 

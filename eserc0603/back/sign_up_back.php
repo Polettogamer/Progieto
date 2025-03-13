@@ -36,14 +36,14 @@ try {
     $stmt->execute();
 
     // Se l'operazione è andata a buon fine, reindirizza al login
-    header("Location: ../front/log_in.php?success=registered");
+    header("Location: ../front/log_in.html?success=registered");
     exit();
 
 } catch (mysqli_sql_exception $e) {
     if ($conn->errno == 1062) { // 1062 = ER_DUP_ENTRY (email duplicata)
-        header("Location: ../front/sign_up.php?error=email_exists");
+        header("Location: ../front/sign_up.html?error=email_exists");
     } else {
-        header("Location: ../front/sign_up.php?error=db_error");
+        header("Location: ../front/sign_up.html?error=db_error");
     
     exit();
 }}
